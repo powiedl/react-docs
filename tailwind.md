@@ -60,7 +60,11 @@ export default defineConfig({
 
 ### Tailwind CSS IntelliSense Extension (einmalig in VS Code)
 
-Durch diese [Extension](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) sieht man als Tooltip, was die jeweilige Tailwind-Klasse in nativem CSS macht. Das ist einerseits gut, weil man "nebenbei" CSS lernt/vertieft - und wenn man CSS schon kann eben genau sieht, was mit der jeweiligen Tailwind-Klasse genau passiert. Einfach in VS Code die entsprechende Extension suchen und auf Install klicken (oder über die Webseite der Extension auf Install klicken)
+Durch diese [Extension](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) sieht man als Tooltip, was die jeweilige Tailwind-Klasse in nativem CSS macht. Das ist einerseits gut, weil man "nebenbei" CSS lernt/vertieft - und wenn man CSS schon kann eben genau sieht, was mit der jeweiligen Tailwind-Klasse genau passiert. 
+
+**TIP**: Das kann man auch verwenden, um zu prüfen, ob man den Klassennamen richtig geschrieben hat. Wenn beim drüberhovern eine "Übersetzung" in normales CSS kommt, ist er richtig geschrieben - wenn nicht, ist er falsch geschrieben.
+
+Einfach in VS Code die entsprechende Extension suchen und auf Install klicken (oder über die Webseite der Extension auf Install klicken)
 
 ### Tailwind Prettier Extension (einmalig in VS Code)
 
@@ -106,3 +110,28 @@ Die Strichstärke wird mit `font-*stärke*` angegeben. Gebräuchliche stärke We
 Außerdem kann man beispielsweise den ganzen Text in Großbuchstaben schreiben, indem man die Klasse `uppercase` verwendet.
 
 `letter-spacing` (in CSS) wird auf `tracking` übersetzt (Basis ist rem), z. b. `tracking-tighter`, `tracking-normal`, `tracking-wide` oder `tracking-widest` ([Vollständige Liste](https://tailwindcss.com/docs/letter-spacing) der letter-spacing). 
+
+## Spacing in Tailwind
+
+Margin wird mit `m` abgekürzt, padding mit `p`.
+
+Danach kommt entweder ein Bindestrich (dann gilt das Setting für alle vier Seiten) oder weiterer Buchstabe, der die Seiten festlegt, für die es gilt. Gebräuchlich sind `x` (`-left` und `-right`), `y` (`-top` und `-bottom`), `t` (`-top`), `r` (`-right`), `b` (`-bottom`) und `l` (`-left`) und dann der Bindestrich.
+
+Man kann leicht ein Spacing für die child-Elemente festlegen. Dafür gibt es space-richtung-groesse. Die richtung kann dabei x oder y sein. Und für groesse gibt es diverse Werte (die gleichen wie auch für margin und padding), Beispiele: space-x-3 oder space-y-0.5. Das dahinterliegende CSS ist etwas kompliziert (aber das versteckt Tailwind "zum Glück").
+
+Nach dem Bindestrich kommt die "Größe". Mögliche Werte für die Größe sind u. a. 0, 0.5, 1, 1.5, ..., 4, 5, ... 12, 14. 96 ist das Maximum (wobei die Lücken nach oben immer größer werden). Außerdem gibt es noch auto Die vollständige Liste findet man wieder in der [Tailwind Doku](https://tailwindcss.com/docs/customizing-spacing).
+
+## CSS Attribut display
+Für das CSS Attribut `display` gibt es auch entsprechende Klassen. Diese sind so gebräuchlich, dass die Tailwind Klassennamen de facto aus dem Wert des display-Attributs bestehen, d. h. `block` ergibt `display: block`, `grid` ergibt `display: grid`. Ausnahme: `hidden` ergibt `display: none`.
+
+## Rahmen
+
+Um einen Border hinzuzufügen, muss man normalerweise `border-seite-staerke` und `border-color` angeben. Bei `border-seite` kann man `-staerke` weglassen, wenn man den Default (1px) will, z. b. `border-b-3 border-slate-500` (macht unten einen 3px Rahmen in slate-500).
+
+## Responsive Design in Tailwind
+
+Tailwind kommt mit einem mobile-first Ansatz, d. h. man designed die App für die "kleinstmögliche Auflösung" und verändert sie falls die Anzeige größer wird. Tailwind hat 5 vorgegebene media Query breakpoints (`min-width` - ergibt sich aus dem mobile-first Ansatz, d. h. im Normalfall werden Elemente vergrößert oder eingeblendet, wenn die Anzeige eine gewisse Mindestbreite hat).
+
+Die 5 vorgegebenen Breakpoints sind `sm` (>=640px), `md` (>=768px), `lg` (>=1024px), `xl` (>=1280px) und `2xl` (>=1536px).
+
+Und man kann jede der Tailwind-Klassennamen mit dem Breakpoint-Namen und einem : prefixen (und dann gilt das nur für eine Anzeigebreite die zumindest dem Breakpoint entspricht). Beispiel: `sm:my-16` oder `lg:text-xl`. Wenn man mehrere Breakpoints verwenden will (für das gleiche Attribut), muss man sie in "aufsteigender" Reihenfolge angeben (darum kümmert sich aber auch der Prettier).
