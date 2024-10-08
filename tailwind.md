@@ -106,7 +106,7 @@ Das macht nur "Sinn" wenn es viele Klassen sind und diese an "vielen" Stellen ve
 
 ### Zugriff aus CSS auf Farben in Tailwind
 
-Manchmal ist es notwendig, direkt in CSS auf Farben als Teil eines Property Wertes zuzugreifen, das kann man dann mit theme(`colors.**farbe**.**intensität**`) machen, z. b. theme(`colors.stone.600`) oder theme(`colors.blue.200`).
+Manchmal ist es notwendig, direkt in CSS auf Farben als Teil eines Property Wertes zuzugreifen, das kann man dann mit theme(`colors.`**`farbe`**`.`**`intensität`**) machen, z. b. theme(`colors.stone.600`) oder theme(`colors.blue.200`).
 
 ### Defaults von Tailwind ändern/überschreiben
 
