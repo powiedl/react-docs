@@ -35,6 +35,7 @@ Dann muss man die tailwind.config.js anpassen:
 ```
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 ```
+Wenn man Tailwindklassen auch in anderen Dateien/Ordnern verwenden will, muss man diese in content entsprechend aufnehmen, ansonsten kann es sein, dass Tailwindklassen in den anderen Orten nicht funktionieren!
 
 ### Tailwind CSS includes eintragen (pro Projekt)
 Dann muss man die "Includes" in die index.css eintragen:
