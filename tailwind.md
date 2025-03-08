@@ -153,12 +153,24 @@ Und "natürlich" kann man die Tailwind Klassen genauso in normalem HTML (z. b. i
 
 ### Größenangaben in Tailwind (size-)
 
-Es gibt verschiedene Größenangaben (die auch auf unterschiedlichen Maßeinheiten beruhen). Entweder wird die Größe als Zahl angegeben (dann wird sie auf rem umgerechnet), oder als Bruchzahl (dann wird sie auf % umgerechnet). Daneben gibt es noch `px` (1 Pixel), `full` (100%), `min` (`min-content`), `max` (`max-content`) und `fit` (`fit-content`).
+Es gibt verschiedene Größenangaben (die auch auf unterschiedlichen Maßeinheiten beruhen). Entweder wird die Größe als Zahl angegeben (dann wird sie auf rem umgerechnet), oder als Bruchzahl (dann wird sie auf % umgerechnet). Daneben gibt es noch `px` (1 Pixel), `full` (100%), `min` (`min-content`), `max` (`max-content`) und `fit` (`fit-content`). Daneben gibt es noch `px` (1 Pixel), `full` (100%), `min` (`min-content`), `max` (`max-content`) und `fit` (`fit-content`).
+
+Mit `w-min` setzt man die Breite eines Elements auf die kleinstmögliche Breite, so dass das Element noch angezeigt wird (im Normalfall die Länge des längsten Worts innerhalb des Elements). Mit `w-max` setzt man die Breite so, dass es den maximalen Content vollständig darstellen kann (entspricht width: `max-content` in "normalem" CSS).
+
+Mit `w-fit` setzt man die Breite so breit, dass das Element den Raum nutzt, jedoch nie mehr wie das breiteste Childelement.
 
 Eine vollständige Auflistung der sizes findet man in der [Tailwind Doku](https://tailwindcss.com/docs/size).
 
 ### Breite / Höhe
 Die Breite wird in Tailwind mit **w-** abgekürzt, die Höhe mit **h-**. Prinzipiell unterstützen beide die Größenangaben, aber zusätzlich haben sie noch ein paar spezielle Möglichkeiten `-screen` (entspricht `100vw` bzw. `100vh`), `-sv[w|h]` (entspricht `100sv[w|h]`, also -svw entspricht 100svw). `-lv[w|h]` (entspricht `100lv[w|h]`) und `-dv[w|h]` (entspricht `100dv[w|h]`).
+
+#### min-w und max-w
+
+Im Gegensatz zu `w-min` legt `min-w-xx` die **minimale** Breite fest (weniger breit kann das Element nicht werden) - außerdem benötigt es auch einen konkreten Wert (w-min und w-max haben keinen "extra" Wert). `max-w` legt analog die maximale Breite fest (breiter kann das Element nicht werden - egal wie viel Platz zur Verfügung steht).
+
+Mit `max-w-fit` kann man ein recht schönes responsive Design erreichen (solange Platz da ist und das Element den Platz "sinnvoll" nutzen kann, solange wächst es). 
+
+
 
 ### "Ausbrechen" aus den Vorgaben der Werte
 
