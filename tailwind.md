@@ -227,7 +227,7 @@ Details siehe die [Tailwind CSS Doku](https://tailwindcss.com/docs/display#flex)
 
 Der Grid-Container bekommt die Klasse `grid`. Um die Zahl der Zeilen festzulegen, gibt man noch `grid-rows-zeilenzahl` an (grid-rows-3 ergibt 3 Zeilen). Analog für die Spalten `grid-cols-spaltenzahl` (grid-cols-2 ergibt 2 Spalten). Das Gap gibt man mit `gap-gapgroesse` an.
 
-
+[Details siehe](/tailwind-grid.md)
 
 ### Pseudoklassen
 
