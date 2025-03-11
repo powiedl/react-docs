@@ -98,3 +98,6 @@ Diese Klassen setzen das CSS-Attribut **align-self**.
 
 In diesem Fall kann man einfach **justify-** durch **place-** ersetzen. Achtung: Die Klassen justify- (für die grundlegende Ausrichtung der Zellen innerhalb der Zeile bzw. Spalte) werden durch **place-content-** ersetzt.
 
+# Offizielle Doku von TailwindCSS
+
+(https://tailwindcss.com/docs/display#grid)
