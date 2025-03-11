@@ -100,4 +100,5 @@ In diesem Fall kann man einfach **justify-** durch **place-** ersetzen. Achtung:
 
 # Offizielle Doku von TailwindCSS
 
-(https://tailwindcss.com/docs/display#grid)
+[Tailwind CSS Doku](https://tailwindcss.com/docs/display#grid)
+
