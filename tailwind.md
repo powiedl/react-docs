@@ -174,7 +174,7 @@ Mit `max-w-fit` kann man ein recht schönes responsive Design erreichen (solange
 
 ### "Ausbrechen" aus den Vorgaben der Werte
 
-Wenn man mit den angebotenen Auswahlmöglichkeiten nicht auskommt, kann man aus dem Tailwind CSS Desginsystem "ausbrechen". Dazu verwendet man [ und ] (dort, wo normalerweise die Größenangabe steht. Zwischen den [ ] schreibt man dann den Wert, so wie man es in CSS machen würde, z. b. `max-h-[225px]` (ergibt im CSS `max-height: 225px`) oder `tracking-[1em]` (ergibt im CSS `letter-spacing: 1em`).
+Wenn man mit den angebotenen Auswahlmöglichkeiten nicht auskommt, kann man aus dem Tailwind CSS Desginsystem "ausbrechen". Dazu verwendet man [ und ] (dort, wo normalerweise die Größenangabe steht. Zwischen den [ ] schreibt man dann den Wert, so wie man es in CSS machen würde, z. b. `max-h-[225px]` (ergibt im CSS `max-height: 225px`) oder `tracking-[1em]` (ergibt im CSS `letter-spacing: 1em`). Wenn man einen Wert setzen will, der im klassischen CSS ein Leerzeichen enthält, muss man dieses Leerzeichen hier durch einen _ ersetzen.
 
 ### Stylen von Text in Tailwind
 
@@ -227,7 +227,7 @@ Details siehe die [Tailwind CSS Doku](https://tailwindcss.com/docs/display#flex)
 
 Der Grid-Container bekommt die Klasse `grid`. Um die Zahl der Zeilen festzulegen, gibt man noch `grid-rows-zeilenzahl` an (grid-rows-3 ergibt 3 Zeilen). Analog für die Spalten `grid-cols-spaltenzahl` (grid-cols-2 ergibt 2 Spalten). Das Gap gibt man mit `gap-gapgroesse` an.
 
-Details siehe die [Tailwind CSS Doku](https://tailwindcss.com/docs/display#grid)
+
 
 ### Pseudoklassen
 
