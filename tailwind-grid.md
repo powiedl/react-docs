@@ -34,14 +34,14 @@ Wenn das Grid in der Dimension größer als die Summe der Größe aller Items in
 
 Dazu verwendet man **justify-**. Daran anschließend kommt die eigentliche Ausrichtung. Folgende Werte sind möglich:
 
-**justify-start**: Die Items werden am Anfang der Zeile positioniert.
-**justify-center**: Die Items werden in der Mitte der Zeile positioniert.
-**justify-end**: Die Items werden am Ende der Zeile positioniert.
-**justify-between**: Der Platz wird gleichmäßig verteilt, so dass die Items möglichst weit auseinander liegen, d. h. das erste Item beginnt ganz am Anfang der Zeile und das letzte endet ganz am Ende der Zeile.
-**justify-around**: Der Platz wird so verteilt, dass links und rechts neben jedem Item gleich viel Platz bleibt. Wenn sich zwei Items nebeneinander befinden ist der Platz zwischen ihnen doppelt so groß (weil jedes Item einmal den Platz "mitbringt").
-**justify-evenly**: Der Platz wird gleichmäßig verteilt, aber am Anfang und Ende der Zeile wird auch jeweils einmal dieser Platz frei gelassen.
-**justify-strech**: Die Items werden so groß wie möglich gemacht, d. h. sie nutzen den verfügbaren Platz bestmöglich aus.
-**justify-normal**: Zum "Resettieren" von einer Einstellung. Danach ist es wieder so, als wäre kein justify-content gesetzt.
+- **justify-start**: Die Items werden am Anfang der Zeile positioniert.
+- **justify-center**: Die Items werden in der Mitte der Zeile positioniert.
+- **justify-end**: Die Items werden am Ende der Zeile positioniert.
+- **justify-between**: Der Platz wird gleichmäßig verteilt, so dass die Items möglichst weit auseinander liegen, d. h. das erste Item beginnt ganz am Anfang der Zeile und das letzte endet ganz am Ende der Zeile.
+- **justify-around**: Der Platz wird so verteilt, dass links und rechts neben jedem Item gleich viel Platz bleibt. Wenn sich zwei Items nebeneinander befinden ist der Platz zwischen ihnen doppelt so groß (weil jedes Item einmal den Platz "mitbringt").
+- **justify-evenly**: Der Platz wird gleichmäßig verteilt, aber am Anfang und Ende der Zeile wird auch jeweils einmal dieser Platz frei gelassen.
+- **justify-strech**: Die Items werden so groß wie möglich gemacht, d. h. sie nutzen den verfügbaren Platz bestmöglich aus.
+- **justify-normal**: Zum "Resettieren" von einer Einstellung. Danach ist es wieder so, als wäre kein justify-content gesetzt.
 
 Diese Klassen setzen das CSS Attribut **justify-content**.
 
@@ -61,11 +61,11 @@ Das kann man entweder allgemein für alle items festlegen (dann legt man es am G
 
 Dazu verwendet man **justify-items-**. Daran anschließend kommt die eigentliche Ausrichtung. Folgende Werte sind möglich:
 
-**justify-items-start**: Dieses Item wird am Anfang der Zelle positioniert.
-**justify-items-center**: Dieses Item wird zentriert in der Mitte der Zelle positioniert.
-**justify-items-end**: Dieses Item wird am Ende der Zelle positioniert.
-**justify-items-strech**: Dieses Item nimmt die gesamte Breite der Zelle ein.
-**justify-items-normal**: Eine eventuell gesetzte Klasse wird wieder "gelöscht".
+- **justify-items-start**: Dieses Item wird am Anfang der Zelle positioniert.
+- **justify-items-center**: Dieses Item wird zentriert in der Mitte der Zelle positioniert.
+- **justify-items-end**: Dieses Item wird am Ende der Zelle positioniert.
+- **justify-items-strech**: Dieses Item nimmt die gesamte Breite der Zelle ein.
+- **justify-items-normal**: Eine eventuell gesetzte Klasse wird wieder "gelöscht".
 
 Diese Klassen setzen das CSS Attribut **justify-items**.
 
@@ -80,11 +80,11 @@ Diese Klassen setzen das CSS Attribut **align-items**.
 #### einzelnes Item in der Zelle positionieren (horizontal)
 
 Dazu verwendet man **justify-self-**. Es sind folgende Werte möglich:
-**justify-self-auto**: Es gilt die allgemeine Einstellung vom Container.
-**justify-self-start**: Dieses Item wird am Anfang der Zelle positioniert.
-**justify-self-center**: Dieses Item wird zentriert in der Mitte der Zelle positioniert.
-**justify-self-end**: Dieses Item wird am Ende der Zelle positioniert.
-**justify-self-strech**: Dieses Item nimmt die gesamte Breite der Zelle ein.
+- **justify-self-auto**: Es gilt die allgemeine Einstellung vom Container.
+- **justify-self-start**: Dieses Item wird am Anfang der Zelle positioniert.
+- **justify-self-center**: Dieses Item wird zentriert in der Mitte der Zelle positioniert.
+- **justify-self-end**: Dieses Item wird am Ende der Zelle positioniert.
+- **justify-self-strech**: Dieses Item nimmt die gesamte Breite der Zelle ein.
 
 Diese Klassen setzen das CSS-Attribut **justify-self**.
 
