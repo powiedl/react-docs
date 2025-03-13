@@ -137,6 +137,12 @@ Wenn man es statt dessen so schreibt:
 
 Wird eine zusätzliche Farbe pizza erzeugt, alle anderen Standardfarben von Tailwind bleiben aber erhalten.
 
+### "Universal" Selektor (*)
+
+Man kann Tailwindklassen mit dem Universal-Selektor prefixen (`*:grow`), damit wendet man die Klasse grow auf alle direkten Nachfolger des Elements an, wo man die Anweisung schreibt. Ab V4 von Tailwind kann man mit `**` alle Nachfolger stylen (unabhängig von der "Distanz" zu ihrem Parent). Das kann beispielsweise bei Grid oder Flexbox interessant sein.
+
+Nachteil der Methode: Auf einem bestimmten untergeordneten Element kann man das vererbte nicht überschreiben (weil es durch den recht spezifischen Selektor eine höhere Spezifität hat wie die direkte Zuweisung am Element selbst).
+
 ## Erklärungen zur Verwendung von Tailwind
 
 ### Farben in Tailwind
